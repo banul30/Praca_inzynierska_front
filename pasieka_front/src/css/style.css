@@ -1,0 +1,1581 @@
+
+/*///////////////DEFAULT///////////////////*/
+html, body {
+    margin: 0;
+}
+
+div.bottomBar {
+    margin-top: -4.5vh;
+    width: 100%;
+    min-width: 800px;
+    height: 4vh;
+    min-height: 20px;
+    background-color: #c44500;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    padding-top: 0.5vh;
+    font-size: 1.5vh;
+    -webkit-text-stroke-width: 0.01vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #f7edd2;
+    text-shadow:  0.1vh 0.1vh 0.25vh #000000;
+}
+
+div.topBar {
+    margin: 0;
+    width: 100%;
+    min-width: 800px;
+    height: calc(30px + 4vh);
+    background-image: url("../../public/img/topBar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+div.topBarGrid {
+    display: grid;
+    grid-template-columns: 20% 22% 52%;
+    grid-column-gap: 1%;
+    margin: 0.6vh 2%;
+    text-align: right;
+}
+
+span.account {
+    cursor: pointer;
+    margin-left: 7vw;
+}
+
+img.userIcon {
+    position: absolute;
+    max-width: 2.7%;
+    width: 100%;
+    max-height: 70%;
+    height: 100%;
+    margin-top: 0.3%;
+    display: inline-block;
+    margin-left: -15.5%;
+}
+span.account p {
+    font-size: calc(10px + 2vh);
+    -webkit-text-stroke-width: 0.1vh;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #ffd500;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    position: absolute;
+    margin-top: 0.6%;
+    margin-left: -12.5%;
+    display: inline-block;
+}
+
+span.logout {
+    cursor: pointer;
+    margin-left: 2vw;
+}
+
+img.logoutIcon {
+    position: absolute;
+    max-width: 2.5%;
+    width: 100%;
+    height: 100%;
+    max-height: 60%;
+    margin-top: 0.4%;
+    margin-left: -7%;
+    display: inline-block;
+}
+
+span.logout p {
+    font-size: calc(10px + 2vh);
+    -webkit-text-stroke-width: 0.1vh;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #ffd500;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    vertical-align: middle;
+    position: absolute;
+    margin-top: 0.6%;
+    margin-left: -4.5%;
+    display: inline-block;
+}
+
+span.back {
+    cursor: pointer;
+    margin-left: 0.3vw;
+}
+
+img.backIcon {
+    position: absolute;
+    max-width: 2.2%;
+    width: 100%;
+    min-width: 28px;
+    height: 100%;
+    max-height: 50%;
+    margin-top: 0.7%;
+    margin-left: 1%;
+    display: inline-block;
+}
+span.back p {
+    font-size: calc(17px + 1.5vh);
+    -webkit-text-stroke-width: 0.1vh;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #ffd500;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    vertical-align: middle;
+    position: absolute;
+    margin-top: 0.6%;
+    margin-left: 3.5%;
+    display: inline-block;
+}
+
+span.title p {
+    font-size: calc(25px + 2vh);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #ffd500;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin-top: 2%;
+}
+div.test {
+    position: absolute;
+    top: 1vh;
+    z-index: 2;
+    margin-left: 30%;
+}
+
+img.logoText {
+    position: absolute;
+    top: 0.2%;
+    margin-left: -10%;
+    width: 100%;
+    max-width: calc(19% + 1vw + 1vh);
+    height: 100%;
+    cursor: pointer;
+}
+
+form.loginForm select{
+    margin: 1vh;
+    border-radius: 0.7vw;
+    font-size: 2vh;
+    font-weight: bold;
+    border: 2px solid #5e1d04;
+    font-family: serif;
+}
+
+form.loginForm select:focus{
+    box-shadow: 0 0.1vw 0.7vw 0;
+    border: 3px solid #c23e0a;
+    outline: none;
+}
+
+/*///////////////MAIN_PAGE///////////////////*/
+
+div.mainPage {
+    background-image: url("../../public/img/beekeepers2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-width: 510px;
+    min-height: 560px;
+    height: 99.9vh;
+    margin: 0;
+    padding-top: 1px;
+    text-align: center;
+}
+
+
+img.honeyCombL {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 49.5vw;
+    min-width: 400px;
+    height: 50vh;
+    min-height: 230px;
+    animation-name: combL;
+    animation-duration: 2s;
+}
+@keyframes combL {
+    0% { width: 99vw; height: 100vh; z-index: 2;}
+    100% {width: 49.5vw; height: 50vh; z-index: 2;}
+}
+
+img.honeyCombR {
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 49.5vw;
+    min-width: 400px;
+    height: 50vh;
+    min-height: 230px;
+    animation-name: combR;
+    animation-duration: 2s;
+}
+@keyframes combR {
+    0% { width: 99vw; height: 100vh; z-index: 2;}
+    100% {width: 49.5vw; height: 50vh; z-index: 2;}
+}
+
+img.beehiveIcon {
+    height: 20vh;
+    min-height: 100px;
+    width: auto;
+}
+
+div.mainSelect {
+    z-index: 1;
+    background-color: #f7edd2;
+    position: absolute;
+    left: 35vw;
+    top: 20vh;
+    height: 60vh;
+    min-height: 450px;
+    width: 30vw;
+    min-width: 330px;
+    border-radius: 2vw;
+    box-shadow: 0 1vw 2.3vw 0;
+}
+
+div.mainSelect h1{
+    font-size: calc(40px + 2.5vh);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin: 1vh;
+}
+div.mainSelect h2{
+    font-size: calc(30px + 1vh);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin: 1vh;
+}
+
+form.loginForm label{
+    font-size: calc(15px + 1vh);
+    -webkit-text-stroke-width: 0.03vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.2vh #000000;
+    text-align: right;
+    margin-top: 0.7vh;
+}
+
+form.loginForm input{
+    margin: 1vh;
+    border-radius: 0.7vw;
+    min-height: 20px;
+    min-width: 100px;
+    font-size: calc(10px + 1vh);
+    font-weight: bold;
+    border: 2px solid #5e1d04;
+    font-family: serif;
+
+}
+form.loginForm input:focus{
+    box-shadow: 0 0.1vw 0.7vw 0;
+    border: 3px solid #c23e0a;
+    outline: none;
+}
+
+form.loginForm textarea{
+    margin: 1vh;
+    margin-left: 20%;
+    border-radius: 0.7vw;
+    min-height: 20px;
+    min-width: 100px;
+    font-size: calc(10px + 1vh);
+    font-weight: bold;
+    border: 2px solid #5e1d04;
+    font-family: serif;
+    resize: none;
+}
+
+form.loginForm textarea:focus{
+    box-shadow: 0 0.1vw 0.7vw 0;
+    border: 3px solid #c23e0a;
+    outline: none;
+}
+
+form.loginForm textarea::-webkit-scrollbar {
+    width: 1vw;
+}
+
+form.loginForm textarea::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0.3vw grey;
+    border-radius: 10px;
+}
+
+form.loginForm textarea::-webkit-scrollbar-thumb {
+    background: #f86e00;
+    border-radius: 2vw;
+}
+
+form.loginForm textarea::-webkit-scrollbar-thumb:hover {
+    background: #c45000;
+}
+
+div.register-form-grid {
+    display: grid;
+    grid-template-columns: calc(100px + 4vw) calc(100px + 8.8vw);
+    grid-template-rows: repeat(3, 5vh);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+div.login-form-grid {
+    display: grid;
+    grid-template-columns: calc(100px + 4vw) calc(100px + 8.8vw);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+
+
+/*///////////////USER_PAGE///////////////////*/
+
+div.userPage {
+    background-image: url("../../public/img/apiary.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-width: 800px;
+    height: 99.9vh;
+    min-height: 630px;
+    margin: 0;
+    padding-top: 1px;
+    text-align: center;
+}
+div.apiarySelect {
+    background-color: #f7edd2;
+    position: absolute;
+    left: 5vw;
+    top: calc(30px + 12vh);
+    height: 70vh;
+    min-height: 420px;
+    width: 30vw;
+    min-width: 300px;
+    border-radius: 2vw;
+    box-shadow: 0 1vw 2.3vw 0;
+}
+
+div.apiarySelect h1{
+    font-size: calc(30px + 1.9vh);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin: 1vh;
+}
+
+div.apiarySelect h2{
+    font-size: calc(17px + 1.3vh);
+    -webkit-text-stroke-width: 0.04vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.2vh #000000;
+    margin: 1vh;
+}
+
+div.apiaryList {
+     height: 75%;
+     width: 80%;
+     margin: 4% auto 0.8vh;
+     background-color: #f5f5f5;
+     border-radius: 0.8vw 0.8vw 0.8vw 0.8vw;
+     border: 1px solid #575757;
+     overflow: auto;
+ }
+
+div.apiaryList::-webkit-scrollbar {
+    width: 1vw;
+}
+
+div.apiaryList::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0.3vw grey;
+    border-radius: 10px;
+}
+
+div.apiaryList::-webkit-scrollbar-thumb {
+    background: #f86e00;
+    border-radius: 2vw;
+}
+
+div.apiaryList::-webkit-scrollbar-thumb:hover {
+    background: #c45000;
+}
+
+img.apiaryListIcon {
+    width: 100%;
+    height: auto;
+    border-radius: 1vw;
+    box-shadow: 0 0.3vw 0.7vw 0;
+    margin: auto;
+}
+
+img.apiaryListOkIcon {
+    width: 80%;
+    height: auto;
+    border-radius: 1vw;
+    box-shadow: 0 0.2vw 0.4vw 0;
+    margin: auto;
+}
+
+img.apiaryListErrorIcon {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+div.apiaryListEntry {
+    display: grid;
+    grid-template-columns: 30% 50% 10%;
+    grid-column-gap: 2%;
+    margin: 3% 2%;
+    border-radius: 1vw;
+    cursor:pointer;
+}
+
+div.apiaryListEntry:hover {
+    background: #ffab23 linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+}
+
+div.apiaryListEntry p{
+    text-align: center;
+    word-break: break-all;
+    font-size: calc(12px + 0.8vh);
+    -webkit-text-stroke-width: 0.01vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.2vh #000000;
+}
+
+div.userPageAlerts {
+    background-color: #f7edd2;
+    position: absolute;
+    left: calc(70px + 52vw);
+    top: calc(30px + 12vh);
+    height: 20vh;
+    min-height: 140px;
+    width: 25vw;
+    min-width: 260px;
+    border-radius: 2vw;
+    box-shadow: 0 1vw 2.3vw 0;
+}
+
+div.userPageAlerts h1{
+    font-size: calc(30px + 1.9vh);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin: 1vh;
+}
+
+div.userPageAlerts h2{
+    font-size: calc(15px + 1.5vh);
+    -webkit-text-stroke-width: 0.04vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.2vh #000000;
+    margin: 1vh;
+}
+
+img.okIcon {
+    width: 10%;
+    min-width: 30px;
+    height: auto;
+    margin: -2% auto auto;
+}
+
+div.userApiaryDetails {
+    background-color: #f7edd2;
+    position: absolute;
+    left: calc(90px + 41vw);
+    top: calc(140px + 30vh);
+    height: 40vh;
+    min-height: 235px;
+    width: 45vw;
+    min-width: 300px;
+    border-radius: 2vw;
+    box-shadow: 0 1vw 2.3vw 0;
+    text-align: center;
+}
+
+div.userApiaryDetails h1{
+    font-size: calc(30px + 1.9vh);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin: 1vh;
+}
+
+div.userApiaryDetails-grid {
+    display: grid;
+    grid-template-columns: 49.5% 49.5%;
+    grid-column-gap: 0;
+    margin: 3% 3%;
+}
+
+div.userApiaryDetails-grid h2{
+    word-break: break-all;
+    font-size: calc(15px + 0.6vw);
+    -webkit-text-stroke-width: 0.04vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.2vh #000000;
+    text-align: left;
+    margin: 4%;
+
+}
+
+div.userAddApiaryForm {
+    background-color: #f7edd2;
+    position: absolute;
+    left: calc(90px + 41vw);
+    top: calc(140px + 30vh);
+    height: 41vh;
+    min-height: 255px;
+    width: 45vw;
+    min-width: 370px;
+    border-radius: 2vw;
+    box-shadow: 0 1vw 2.3vw 0;
+    text-align: center;
+}
+
+div.userAddApiaryForm h1 {
+    font-size: calc(30px + 0.9vw);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin: 1vh;
+}
+
+div.userAddApiaryForm h4 {
+    text-align: center;
+    word-break: break-all;
+    font-size: calc(12px + 0.8vh);
+    -webkit-text-stroke-width: 0.02vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.2vh #000000;
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+
+div.addApiary-form-grid {
+    display: grid;
+    grid-template-columns: 12vw 15vw;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    margin: 0 13%;
+}
+
+
+
+/*///////////////APIARY_PAGE///////////////////*/
+
+div.apiaryPage {
+    background-image: url("../../public/img/apiary2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-width: 840px;
+    height: 99.9vh;
+    min-height: 830px;
+    margin: 0;
+    padding-top: 1px;
+    text-align: center;
+}
+
+div.weather {
+    background-color: #f7edd2;
+    position: absolute;
+    left: 5vw;
+    top: calc(30px + 5.5vh);;
+    height: 20vh;
+    min-height: 135px;
+    width: 30vw;
+    min-width: 300px;
+    border-radius: 2vw;
+    box-shadow: 0 1vw 2.3vw 0;
+}
+
+div.weather h1{
+    font-size: calc(30px + 1.9vh);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin: 1vh;
+}
+
+div.beehiveSelect {
+    background-color: #f7edd2;
+    position: absolute;
+    left: 5vw;
+    top: calc(110px + 20vh);
+    height: 60vh;
+    min-height: 400px;
+    width: 30vw;
+    min-width: 300px;
+    border-radius: 2vw;
+    box-shadow: 0 1vw 2.3vw 0;
+}
+
+div.beehiveSelect h1{
+    font-size: calc(30px + 1.9vh);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin: 1vh;
+}
+
+div.beehiveSelect h2{
+    font-size: calc(17px + 1.3vh);
+    -webkit-text-stroke-width: 0.04vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.2vh #000000;
+    margin: 1vh;
+}
+
+div.beehiveList {
+    height: 72%;
+    width: 80%;
+    margin: 4% auto 0.8vh;
+    background-color: #f5f5f5;
+    border-radius: 0.8vw 0.8vw 0.8vw 0.8vw;
+    border: 1px solid #575757;
+    overflow: auto;
+}
+
+div.beehiveList::-webkit-scrollbar {
+    width: 1vw;
+}
+
+div.beehiveList::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0.3vw grey;
+    border-radius: 10px;
+}
+
+div.beehiveList::-webkit-scrollbar-thumb {
+    background: #f86e00;
+    border-radius: 2vw;
+}
+
+div.beehiveList::-webkit-scrollbar-thumb:hover {
+    background: #c45000;
+}
+
+img.beehiveListIcon {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5vw;
+    box-shadow: 0 0.3vw 0.7vw 0;
+    margin: auto;
+}
+
+img.beehiveListOkIcon {
+    width: 80%;
+    height: auto;
+    border-radius: 1vw;
+    box-shadow: 0 0.2vw 0.4vw 0;
+    margin: auto;
+}
+
+img.beehiveListErrorIcon {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+div.beehiveListEntry {
+    display: grid;
+    grid-template-columns: 30% 50% 10%;
+    grid-column-gap: 2%;
+    margin: 3% 2%;
+    border-radius: 1vw;
+    cursor:pointer;
+}
+
+div.beehiveListEntry:hover {
+    background: #ffab23 linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+}
+
+div.beehiveListEntry p{
+    text-align: center;
+    word-break: break-all;
+    font-size: calc(12px + 0.8vh);
+    -webkit-text-stroke-width: 0.01vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.2vh #000000;
+}
+
+div.apiaryBeehiveDetails {
+     background-color: #f7edd2;
+     position: absolute;
+     left: calc(90px + 41vw);
+     top: calc(210px + 30vh);
+     height: 40vh;
+     min-height: 290px;
+     width: 45vw;
+     min-width: 300px;
+     border-radius: 2vw;
+     box-shadow: 0 1vw 2.3vw 0;
+     text-align: center;
+ }
+
+div.apiaryBeehiveDetails h1{
+    font-size: calc(30px + 1.9vh);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin: 1vh;
+}
+
+div.apiaryBeehiveDetails-grid {
+    display: grid;
+    grid-template-columns: 49.5% 49.5%;
+    grid-column-gap: 0;
+    margin: 3% 3%;
+}
+
+div.apiaryBeehiveDetails-grid h2{
+    word-break: break-all;
+    font-size: calc(15px + 0.6vw);
+    -webkit-text-stroke-width: 0.04vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.2vh #000000;
+    text-align: left;
+    margin: 4%;
+
+}
+
+div.apiaryAddBeehiveForm {
+    background-color: #f7edd2;
+    position: absolute;
+    left: calc(90px + 41vw);
+    top: calc(210px + 30vh);
+    height: 40vh;
+    min-height: 350px;
+    width: 45vw;
+    min-width: 300px;
+    border-radius: 2vw;
+    box-shadow: 0 1vw 2.3vw 0;
+    text-align: center;
+}
+
+div.apiaryAddBeehiveForm h1 {
+    font-size: calc(30px + 1.9vh);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin: 1vh;
+}
+
+div.apiaryDetails {
+    background-color: #f7edd2;
+    position: absolute;
+    left: calc(100px + 35vw);
+    top: calc(30px + 5.5vh);
+    height: 40vh;
+    min-height: 300px;
+    width: 55vw;
+    min-width: 350px;
+    border-radius: 2vw;
+    box-shadow: 0 1vw 2.3vw 0;
+    text-align: center;
+}
+
+div.apiaryDetails h1{
+    font-size: calc(30px + 1.9vh);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin: 1vh;
+}
+
+div.apiaryDetails h2{
+    font-size: calc(18px + 1vw);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin-top: 2vh;
+    margin-bottom: 0.5vh;
+}
+
+
+div.apiaryDetails-grid {
+    display: grid;
+    grid-template-columns: 49.5% 49.5%;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    margin: 0.5% 4%;
+}
+
+div.apiaryDetails-grid h2{
+    font-size: calc(15px + 0.5vw);
+    display: inline-block;
+    -webkit-text-stroke-width: 0.04vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.2vh #000000;
+    text-align: left;
+    margin: 2% 4% 2%;
+
+}
+
+img.apiaryNoteIcon {
+    max-width: 10%;
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: -3%;
+    margin-left: 2%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+div.apiaryNotes {
+    background-color: #f7edd2;
+    position: absolute;
+    left: calc(100px + 35vw);
+    top: calc(30px + 5.5vh);
+    height: 40vh;
+    min-height: 300px;
+    width: 55vw;
+    min-width: 350px;
+    border-radius: 2vw;
+    box-shadow: 0 1vw 2.3vw 0;
+    text-align: center;
+}
+
+div.apiaryNotes h1{
+    font-size: calc(30px + 1.9vh);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin: 1vh;
+}
+
+div.apiaryNotes h2{
+    font-size: calc(18px + 1vw);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin-top: 2vh;
+    margin-bottom: 0.5vh;
+}
+
+textarea.apiaryNote{
+    margin: 1vh;
+    margin-left: 10%;
+    border-radius: 0.7vw;
+    min-height: 20px;
+    min-width: 100px;
+    font-size: calc(10px + 1vh);
+    font-weight: bold;
+    border: 2px solid #8a2904;
+    font-family: serif;
+    resize: none;
+    display: block;
+
+}
+
+textarea.apiaryNote:focus{
+    border: 2px solid #8a2904;
+    outline: none;
+}
+
+textarea.apiaryNote::-webkit-scrollbar {
+    width: 1vw;
+}
+
+textarea.apiaryNote::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0.3vw grey;
+    border-radius: 10px;
+}
+
+textarea.apiaryNote::-webkit-scrollbar-thumb {
+    background: #f86e00;
+    border-radius: 2vw;
+}
+
+textarea.apiaryNote::-webkit-scrollbar-thumb:hover {
+    background: #c45000;
+}
+
+div.apiaryAlertList {
+    height: 10vh;
+    width: 65%;
+    margin: 1% auto;
+    background-color: #f5f5f5;
+    border-radius: 0.8vw 0.8vw 0.8vw 0.8vw;
+    border: 1px solid #575757;
+    overflow: auto;
+}
+
+div.apiaryAlertList::-webkit-scrollbar {
+    width: 1vw;
+}
+
+div.apiaryAlertList::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0.3vw grey;
+    border-radius: 10px;
+}
+
+div.apiaryAlertList::-webkit-scrollbar-thumb {
+    background: #f86e00;
+    border-radius: 2vw;
+}
+
+div.apiaryAlertList::-webkit-scrollbar-thumb:hover {
+    background: #c45000;
+}
+
+div.apiaryAlertList p{
+    text-align: center;
+    display:inline-block;
+    vertical-align: middle;
+    font-size: calc(12px + 0.4vw);
+    -webkit-text-stroke-width: 0.01vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.2vh #000000;
+    margin: 0.5vh;
+}
+
+div.apiaryAlertListEntry {
+    display: grid;
+    grid-template-columns: 15% 55% 20%;
+    grid-column-gap: 2%;
+    margin: 1% 2%;
+    border-radius: 1vw;
+}
+
+img.apiaryAlertListEntryIcon {
+    width: 30%;
+    height: auto;
+    margin: auto;
+}
+
+div.apiaryEditForm {
+    background-color: #f7edd2;
+    position: absolute;
+    left: calc(100px + 35vw);
+    top: calc(30px + 5.5vh);
+    height: 42.8vh;
+    min-height: 300px;
+    width: 55vw;
+    min-width: 350px;
+    border-radius: 2vw;
+    box-shadow: 0 1vw 2.3vw 0;
+    text-align: center;
+}
+
+div.apiaryEditForm h1{
+    font-size: calc(30px + 1.9vh);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin: 1vh;
+}
+
+div.apiaryEditForm h4 {
+    text-align: center;
+    word-break: break-all;
+    font-size: calc(12px + 0.8vh);
+    -webkit-text-stroke-width: 0.02vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.2vh #000000;
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+
+div.editApiary-form-grid {
+    display: grid;
+    grid-template-columns: 12vw 15vw;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    margin: 0 13%;
+}
+
+
+
+
+/*///////////////BEEHIVE_PAGE///////////////////*/
+
+div.beehivePage {
+    background-image: url("../../public/img/beehive.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-width: 1000px;
+    height: 99.9vh;
+    min-height: 830px;
+    margin: 0;
+    padding-top: 1px;
+    text-align: center;
+}
+
+div.beehiveDetails {
+    background-color: #f7edd2;
+    position: absolute;
+    left: calc(100px + 35vw);
+    top: calc(30px + 5.5vh);
+    height: 45vh;
+    min-height: 380px;
+    width: 55vw;
+    min-width: 500px;
+    border-radius: 2vw;
+    box-shadow: 0 1vw 2.3vw 0;
+    text-align: center;
+}
+
+div.beehiveDetails h1{
+    font-size: calc(30px + 1.9vh);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin: 1vh;
+}
+
+div.beehiveDetails h2{
+    font-size: calc(18px + 1vw);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin-top: 2vh;
+    margin-bottom: 0.5vh;
+}
+
+div.beehiveDetails h4 {
+    text-align: center;
+    word-break: break-all;
+    font-size: calc(12px + 0.8vh);
+    -webkit-text-stroke-width: 0.02vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.2vh #000000;
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+
+
+div.beehiveDetails-grid {
+    display: grid;
+    grid-template-columns: 49.5% 49.5%;
+    grid-column-gap: 0;
+    margin: 0.5% 4%;
+}
+
+div.beehiveDetails-grid h2{
+    word-break: break-all;
+    font-size: calc(15px + 0.5vw);
+    -webkit-text-stroke-width: 0.04vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.2vh #000000;
+    text-align: left;
+    margin: 2% 4% 3%;
+
+}
+
+div.beehiveAlertList {
+    height: 25%;
+    width: 65%;
+    margin: 1% auto;
+    background-color: #f5f5f5;
+    border-radius: 0.8vw 0.8vw 0.8vw 0.8vw;
+    border: 1px solid #575757;
+    overflow: auto;
+}
+
+div.beehiveAlertList::-webkit-scrollbar {
+    width: 1vw;
+}
+
+div.beehiveAlertList::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0.3vw grey;
+    border-radius: 10px;
+}
+
+div.beehiveAlertList::-webkit-scrollbar-thumb {
+    background: #f86e00;
+    border-radius: 2vw;
+}
+
+div.beehiveAlertList::-webkit-scrollbar-thumb:hover {
+    background: #c45000;
+}
+
+div.beehiveAlertList p{
+    word-break: break-all;
+    text-align: center;
+    font-size: calc(12px + 0.4vw);
+    -webkit-text-stroke-width: 0.01vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.2vh #000000;
+    margin: 0.5vh;
+}
+
+div.beehiveDiseases {
+    background-color: #f7edd2;
+    position: absolute;
+    left: calc(100px + 35vw);
+    top: calc(280px + 28vh);
+    height: 35vh;
+    min-height: 250px;
+    width: 55vw;
+    min-width: 500px;
+    border-radius: 2vw;
+    box-shadow: 0 0.7vw 2vw 0;
+}
+
+div.beehiveDiseases h1{
+    font-size: calc(30px + 1.9vh);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin: 0.5vh;
+}
+
+div.beehiveDiseases h2{
+    word-break: break-all;
+    font-size: calc(12px + 0.6vw + 0.6vh);
+    -webkit-text-stroke-width: 0.04vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.2vh #000000;
+    margin: 0.5vh;
+    margin-top: 0;
+}
+
+div.diseaseList {
+    height: 55%;
+    width: 80%;
+    margin: 2% auto 0.8vh;
+    background-color: #f5f5f5;
+    border-radius: 0.8vw 0.8vw 0.8vw 0.8vw;
+    border: 1px solid #575757;
+    overflow: auto;
+}
+
+div.diseaseList::-webkit-scrollbar {
+    width: 1vw;
+}
+
+div.diseaseList::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0.3vw grey;
+    border-radius: 10px;
+}
+
+div.diseaseList::-webkit-scrollbar-thumb {
+    background: #f86e00;
+    border-radius: 2vw;
+}
+
+div.diseaseList::-webkit-scrollbar-thumb:hover {
+    background: #c45000;
+}
+
+div.diseaseListEntry {
+    display: grid;
+    grid-template-columns: 25% 60% 5%;
+    grid-column-gap: 2%;
+    margin: 0 1%;
+    border-radius: 0;
+}
+
+div.diseaseListEntry p{
+    word-break: break-all;
+    text-align: center;
+    font-size: calc(12px + 0.4vw);
+    -webkit-text-stroke-width: 0.01vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.2vh #000000;
+}
+
+img.deleteIcon {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    cursor: pointer;
+}
+
+div.addDisease-form-grid {
+    display: grid;
+    grid-template-columns: 10vw 15vw;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    margin: 5% 0 2% 20%;
+}
+
+img.diseaseOkIcon {
+    width: 4%;
+    height: auto;
+    margin: auto;
+}
+
+div.beehiveMotherBee {
+    background-color: #f7edd2;
+    position: absolute;
+    left: 5vw;
+    top: calc(30px + 5.5vh);
+    height: 40vh;
+    min-height: 290px;
+    width: 30vw;
+    min-width: 250px;
+    border-radius: 2vw;
+    box-shadow: 0 0.7vw 2vw 0;;
+    text-align: center;
+}
+
+div.beehiveMotherBee h1{
+    font-size: calc(30px + 1.9vh);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin: 1vh;
+}
+
+div.beehiveMotherBee h2{
+    word-break: break-all;
+    font-size: calc(18px + 1vw);
+    -webkit-text-stroke-width: 0.04vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.2vh #000000;
+    margin: 0.5vh;
+}
+
+img.MotherBeeErrorIcon {
+    width: 8%;
+    min-width: 30px;
+    height: auto;
+    margin: auto;
+}
+
+div.beehiveWeight {
+    background-color: #f7edd2;
+    position: absolute;
+    left: 5vw;
+    top: calc(230px + 27vh);
+    height: 40vh;
+    min-height: 290px;
+    width: 30vw;
+    min-width: 250px;
+    border-radius: 2vw;
+    box-shadow: 0 0.7vw 2vw 0;
+    text-align: center;
+}
+
+div.beehiveWeight h1{
+    font-size: calc(30px + 1.9vh);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.3vh #000000;
+    margin: 1vh;
+    display: inline-block;
+}
+
+div.beehiveWeight h2{
+    word-break: break-all;
+    font-size: calc(18px + 1vw);
+    -webkit-text-stroke-width: 0.04vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.2vh #000000;
+    margin: 0.5vh;
+}
+
+img.weightLoading{
+    width: 20%;
+    height: auto;
+    display: block;
+    margin: 3% auto 0;
+}
+
+img.chartIcon {
+    width: 8.5%;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: -1.5%;
+    margin-right: -18%;
+    margin-left: 12%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+div.beehiveMotherBeeDetails-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 0;
+    margin: 5% 5%;
+}
+
+div.beehiveMotherBeeDetails-grid h2{
+    font-size: calc(15px + 0.5vw);
+    -webkit-text-stroke-width: 0.04vw;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #c23e0a;
+    text-shadow:  0.1vh 0.1vh 0.2vh #000000;
+    text-align: center;
+    margin: 0% 4% 1%;
+
+}
+
+div.addMotherBee-form-grid {
+    display: grid;
+    grid-template-columns: 45% 50%;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    margin: 0 2%;
+}
+
+
+
+
+/*///////////////ACCOUNT_PAGE///////////////////*/
+
+div.accountPage {
+    background-image: url("../../public/img/accountPage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-width: 1000px;
+    height: 99.9vh;
+    min-height: 500px;
+    margin: 0;
+    padding-top: 1px;
+    text-align: center;
+
+
+}
+
+
+
+/*///////////////ERROR_PAGE///////////////////*/
+
+div.errorPage{
+    text-align: center;
+    top: 50%;
+}
+
+img.errorPage {
+    width: 10%;
+    height: auto;
+    margin-top: 10vh;
+}
+
+
+
+/*///////////////LOADING_PAGE///////////////////*/
+
+h1.loadingPage{
+    text-align: center;
+    font-size: 4vw;
+    color: #ffaa22;
+    margin-top: 0;
+}
+
+img.loadingPage{
+    width: 9%;
+    height: auto;
+    display: block;
+    margin: 10vh auto 0;
+}
+
+
+
+/*///////////////BUTTONS///////////////////*/
+
+.mainPageButton {
+    box-shadow: 0 1px 7px 0 #9e9c8e;
+    background: #ffec64 linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    border-radius:26px;
+    border:1px solid #ffaa22;
+    display:inline-block;
+    cursor:pointer;
+    color:#333333;
+    font-family: Arial, serif;
+    font-size:calc(10px + 0.9vh);
+    font-weight:bold;
+    padding:1vh 4vw;
+    text-decoration:none;
+    text-shadow:0 1px 0 #ffee66;
+    margin: 1vh;
+}
+.mainPageButton:hover {
+    background: #ffab23 linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+}
+
+.mainPageButton:active {
+    position:relative;
+    top:1px;
+}
+
+form.loginForm input.submitBtn{
+    box-shadow: 0 1px 7px 0 #9e9c8e;
+    background: #ff6600 linear-gradient(to bottom, #ff6600 5%, #cf3700 100%);
+    border-radius:26px;
+    border: 1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: Arial, serif;
+    font-size:calc(10px + 0.9vh);
+    font-weight:bold;
+    padding:1vh 4vw;
+    text-decoration:none;
+    text-shadow:0 1px 0 #810e05;
+}
+form.loginForm input.submitBtn:hover {
+    background: #cf3700 linear-gradient(to bottom, #cf3700 5%, #ff6600 100%);
+}
+form.loginForm input.submitBtn:active {
+    position:relative;
+    top:1px;
+}
+
+.apiarySelectButton {
+    box-shadow: 0 1px 7px 0 #9e9c8e;
+    background: #ffec64 linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    border-radius:26px;
+    border:0.1vh solid #ffaa22;
+    display:inline-block;
+    cursor:pointer;
+    color:#333333;
+    font-family: Arial, serif;
+    font-size: calc(10px + 0.9vh);
+    font-weight:bold;
+    padding: 0.8vh 0.8vw;
+    text-decoration:none;
+    text-shadow:0 0.1vh 0 #ffee66;
+    margin-top: 0;
+}
+.apiarySelectButton:hover {
+    background: #ffab23 linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+}
+
+.apiarySelectButton:active {
+    position:relative;
+    top:1px;
+}
+
+.apiaryDetailsDeleteButton {
+    box-shadow: 0 1px 7px 0 #262525;
+    background: #fa2d2d linear-gradient(to bottom, #ec1010 5%, #8d1111 100%);
+    border-radius:26px;
+    border:1px solid #bd0808;
+    display:inline-block;
+    cursor:pointer;
+    color: #faf8f8;
+    font-family: Arial, serif;
+    font-size:calc(10px + 0.9vh);
+    font-weight:bold;
+    padding:1vh 4vw;
+    text-decoration:none;
+    text-shadow:0 1px 0 #000000;
+    margin: 1vh;
+}
+.apiaryDetailsDeleteButton:hover {
+    background: #e12a2a linear-gradient(to bottom, #8d1111 5%, #ec1010 100%);
+}
+
+.apiaryDetailsDeleteButton:active {
+    position:relative;
+    top:1px;
+}
+
+.motherBeeDeleteButton {
+    box-shadow: 0 1px 7px 0 #262525;
+    background: #fa2d2d linear-gradient(to bottom, #ec1010 5%, #8d1111 100%);
+    border-radius:26px;
+    border:1px solid #bd0808;
+    display:inline-block;
+    cursor:pointer;
+    color: #faf8f8;
+    font-family: Arial, serif;
+    font-size: calc(10px + 0.9vh);
+    font-weight:bold;
+    padding: 0.8vh 0.8vw;
+    text-decoration:none;
+    text-shadow:0 1px 0 #000000;
+    margin: 1vh;
+}
+.motherBeeDeleteButton:hover {
+    background: #e12a2a linear-gradient(to bottom, #8d1111 5%, #ec1010 100%);
+}
+
+.motherBeeDeleteButton:active {
+    position:relative;
+    top:1px;
+}
+
+.apiaryFoodDeleteButton {
+    box-shadow: 0 1px 7px 0 #262525;
+    background: #fa2d2d linear-gradient(to bottom, #ec1010 5%, #8d1111 100%);
+    border-radius:26px;
+    border:1px solid #bd0808;
+    display:inline-block;
+    cursor:pointer;
+    color: #faf8f8;
+    font-family: Arial, serif;
+    font-size:calc(10px + 0.9vh);
+    font-weight:bold;
+    padding:0.8vh 0.8vw;
+    text-decoration:none;
+    text-shadow:0 0.1vh 0 #000000;
+    margin-top: 0;
+}
+.apiaryFoodDeleteButton:hover {
+    background: #e12a2a linear-gradient(to bottom, #8d1111 5%, #ec1010 100%);
+}
+
+.apiaryFoodDeleteButton:active {
+    position:relative;
+    top:1px;
+}
+
+
+.leaflet-container {
+    width: 90%;
+    height: 47%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+/*///////////////MOBILE///////////////////*/
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    div.mainSelect {
+    }
+}
